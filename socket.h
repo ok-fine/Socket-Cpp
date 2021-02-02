@@ -15,5 +15,8 @@ int client();
 int server_select();
 int client_select();
 
+int server_kqueue();
+int client_kqueue();
+
 
 #endif /* socket_h */

@@ -60,7 +60,7 @@ int main(int argc, const char * argv[]){
     tv.tv_usec = 0;  // microseconds
     while (1) {
        FD_ZERO(&server_fd_set);
-       //标准输入
+       //标准输入加入fd集合
        FD_SET(STDIN_FILENO, &server_fd_set);
        if (max_fd < STDIN_FILENO) {
            max_fd = STDIN_FILENO;
